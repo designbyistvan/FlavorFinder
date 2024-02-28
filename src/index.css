@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to right, #EC9714, #F12929); 
+  width: 80%;
+  margin: auto;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+#logo {
+  color: #513409;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+}

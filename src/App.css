@@ -1,0 +1,99 @@
+.logo {
+  text-align: center;
+  color: #251702;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.cards {
+  color: #513409;
+  cursor: pointer;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 24px 0px rgba(2, 53, 44, 0.2);
+  transition: all 0.5s ease-in-out;
+  background: #f7ece5;
+}
+
+.cards:hover {
+  transform: scale(1.02, 1.08);
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.search {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  font-weight: 700;
+  color: #513409;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: #fffaf7;
+}
+
+input:focus {
+  outline: none;
+}
+
+.filterContainer button {
+  padding: 8px;
+}
+
+button {
+  color: #513409;
+  border: none;
+  margin-left: 16px;
+  border-radius: 8px;
+  background: #fffaf7;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+button.active {
+  font-weight: 700;
+  background: #251702;  
+  color: #fffaf7;
+}
+
+@media only screen and (max-width: 860px) {
+  .logo{
+    margin-bottom: 64px;
+  }
+  .search {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  .search button {
+    margin-top: 16px;
+  }
+}
